@@ -1,0 +1,11 @@
+.row__posters{
+    display: flex; /* align the array design by default row */
+    flex-direction: row; /* direction of the flex property */
+}
+
+.row__poster{
+    width: 100%; /* only going to use up 100% of the screen */
+    object-fit: contain; /* will keep the aspect ratio */
+    max-height: 100px;
+}
+
