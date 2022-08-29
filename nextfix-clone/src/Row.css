@@ -1,11 +1,37 @@
+.row{
+    margin-left: 20px; /* to create a margin from left*/
+    color: white;
+}
 .row__posters{
     display: flex; /* align the array design by default row */
     flex-direction: row; /* direction of the flex property */
+    overflow-x: scroll; /* make rows scrollable within the default browsers dimension */
+    overflow-y: hidden; /* hide the vertical scroll option */
+    padding: 20px; /* to make sure that transformation does not crop */
+}
+
+.row__posters::-webkit-scrollbar{ /* tell all browser and access the scrollbar functionality */
+    display: none; /* don't show the scrollbar but keep the funtionality */
 }
 
 .row__poster{
-    width: 100%; /* only going to use up 100% of the screen */
-    object-fit: contain; /* will keep the aspect ratio */
-    max-height: 100px;
+    width: 100%; /* only going to u se up 100% of the screen */
+    object-fit: contain; /* will keep the aspect ratio with the browser */
+    max-height: 100px; /* max height of the poster even if we resize browser */
+    transition: transform 450ms; /* time for the transformation to take place */
+    margin-right: 10px; /* space between each poster on row */
+}
+
+.row__poster:hover{
+    transform: scale(1.08); /* scale up the poster a bit */
+}
+
+.row__posterLarge{
+    max-height: 250px;
+}
+
+.row__posterLarge:hover{
+    transform: scale(1.09);
+    opacity: 1;
 }
 
