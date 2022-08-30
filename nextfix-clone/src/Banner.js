@@ -21,7 +21,6 @@ function Banner() {
     fetchData();
   }, []);
 
-  console.log(movie);
 
   function truncate(str, n){
     /* a function to replace the ellipsis property but with number of text */
