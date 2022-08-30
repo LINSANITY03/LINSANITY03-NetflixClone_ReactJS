@@ -35,7 +35,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
   }; /* css for youtube player with autoplay on */
 
   const handleClick = movie =>{
-        if (trailerUrl && movie?.id == movieId){
+        if (trailerUrl && movie?.id === movieId){
             setTrailerUrl('');
         } else {
             movieTrailer(movie?.name || "")
