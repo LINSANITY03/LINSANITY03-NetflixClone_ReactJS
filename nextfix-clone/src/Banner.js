@@ -25,7 +25,7 @@ function Banner() {
 
   function truncate(str, n){
     /* a function to replace the ellipsis property but with number of text */
-    return str?.length > n ? str.substr(0, n - 1) + "..." : str;
+    return str?.length > n ? str.substr(0, n - 1) + "..." : str; /* substr returns part of the string */
   }
   
 
@@ -52,6 +52,7 @@ function Banner() {
                                         {/* truncate after 150 characters */}
             </h1>
         </div>
+        <div className="banner__fadeBottom"/> {/* this is to make a fade transition between banner and row */}
     </header>
   )
 }
