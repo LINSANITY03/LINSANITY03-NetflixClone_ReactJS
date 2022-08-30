@@ -8,7 +8,7 @@ const base_url = "https://image.tmdb.org/t/p/original/"; /* this is for the appe
                                                         the map's object for the complete url */
 
 function Row({ title, fetchUrl, isLargeRow }) {
-    const [movies, setMovies] = useState([]);
+    const [movies, setMovies] = useState([]); /* set the initial value to an empty array */
 
     // A snippet of code which runs based on a specific condition
     useEffect(() => {
@@ -16,7 +16,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
         async function fetchData(){
             const request = await axios.get(fetchUrl); /* we get base url from axios and requested url 
                                                         from app.js */
-            setMovies(request.data.results);
+            setMovies(request.data.results); /* this doesnot take previous state only set current state value of movies*/
             return request;
         }
         fetchData();

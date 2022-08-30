@@ -1,0 +1,30 @@
+.nav{
+    position: fixed; /* we want to make sure navbar stay fixed when we scroll the page */
+    top: 0; /* we want at the top with no gap */
+    display: flex; /* bydefault its row */
+    justify-content: space-between; /* justify content align the content along the main axis; with even space */
+    width: 100%; /* nav can use total width of the browser to overide the fixed property from above */
+    height: 30px; /* total height of navbar */
+    z-index: 1; /* z-index to create stack with higher number in front */   
+    padding: 20px;
+    transition-timing-function: ease-in; /* has transition of ease-in type */
+    transition: all 0.5s;
+}
+
+.nav_black{
+    background-color: #111;
+}
+
+.nav_logo{
+    position: fixed; /* The element is positioned relative to the browser window */
+    left: 20px;
+    width: 80px; /* only going to use up 80px of the screen */ 
+    object-fit: contain; /* make sure the image retain its aspect ration when its width is 80px */
+}
+
+.nav__avatar{
+    position: fixed; /* fixing the avatar to the 20px from side of the brower */ 
+    right: 20px;
+    width: 30px;
+    object-fit: contain;
+}

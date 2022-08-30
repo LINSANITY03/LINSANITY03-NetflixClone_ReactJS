@@ -3,11 +3,12 @@ import './App.css';
 import Row from './Row';
 import requests from './request';
 import Banner from './Banner';
+import Nav from './Nav';
 
 function App() {
   return (
     <div className="App">
-      {/* Nav */}
+      <Nav />
       <Banner />
       <Row title="NETFLIX ORIGINAL" fetchUrl={requests.fetchNetflixOriginals} isLargeRow/> 
       {/* we want background img from api rather than normal image*/}

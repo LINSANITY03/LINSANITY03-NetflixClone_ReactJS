@@ -15,7 +15,7 @@
 }
 
 .row__poster{
-    width: 100%; /* only going to u se up 100% of the screen */
+    width: 100%; /* only going to use up 100% of the screen */
     object-fit: contain; /* will keep the aspect ratio with the browser */
     max-height: 100px; /* max height of the poster even if we resize browser */
     transition: transform 450ms; /* time for the transformation to take place */
